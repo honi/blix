@@ -1,0 +1,7 @@
+variables: variables.yml
+tasks:
+  download-tv-shows:
+    rss:
+      url: https://showrss.info/other/all.rss
+    series:
+      shows: '{? shows ?}'
